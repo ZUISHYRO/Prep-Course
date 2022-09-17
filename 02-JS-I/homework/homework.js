@@ -114,7 +114,7 @@ function mayorQueCincuenta(num) {
     return true;
 
   }else {
-
+    
    return false;
 
   }
