@@ -18,14 +18,11 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if ( edad >= 18){
-
-    console.log('Allowed');
-    return;
+    return "Allowed";
 
   }else {
 
-    console.log ("Not allowed");
-    return;
+    return "Not allowed";
 
   }
 }
@@ -40,9 +37,9 @@ if (status === 1){
 
   return "Online";
 
-}else if (ststus === 2){
-  console.log("Away");
-  return;
+}else if (status === 2){
+
+  return "Away";
 
 }else {
   return "Offline";
