@@ -116,7 +116,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (number < 1 && number > 0) return false;
+  Math.floor (number < 1 && number > 0);
   return true;
 
 }
@@ -160,7 +160,7 @@ function esPrimo(numero) {
 
   }
 
-  return numero !== 1;
+  return false;
 
 }
 
@@ -178,7 +178,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   let arr = [];
 
-  for (i = 0; i < 10; i++ ){
+  for (let i = 0; i <= 10; i++ ){
     arr.push(i*6)
   }
   return arr;
@@ -197,9 +197,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  while (numero > 8){
-    numero++;
-  }return numero
+  do {
+    numero + 5;
+    return numero;
+
+  }
+  while (numero > 8);
 }
 
 
