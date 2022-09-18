@@ -5,11 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x >= y){
-
-
-
-  }
+  return x > y ? x : y; 
 
 }
 
@@ -95,11 +91,9 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-if (numero === 10 || numero === 5){
-  return "true";
-}else{
+if (numero === 10 || numero === 5) return "true";
   return "false"
-}
+
 }
 
 function estaEnRango(numero) {
