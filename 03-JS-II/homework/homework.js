@@ -116,7 +116,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if(Math.floor(numero) < 1 && Math.floor(numero) > 0) return false;
+  if(Math.floor(numero) < 1 && Math.floor(numero) > 0) return true;
   return false;
 
 }
