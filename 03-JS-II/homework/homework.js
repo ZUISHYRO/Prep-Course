@@ -116,7 +116,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  Math.floor (number < 1 && number > 0);
+  if(Math.floor(numero) < 1 && Math.floor(numero) > 0) return false;
   return true;
 
 }
@@ -142,7 +142,7 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 > num2 && num1 > num3) return "Número 1 es mayor y positivo";
   if (num1 < 0 ||num2 < 0 ||num3 < 0 ) return "Hay negativos";
   if (num3 > num1 && num3 > num2) return num3 + 1;
-  if (num1 === 0 ||num2 === 0 ||num3 === 0 ) return "Error";
+  if (num1 === 0 &&num2 === 0 &&num3 === 0 ) return "Error";
   return false
 }
 
@@ -157,6 +157,8 @@ function esPrimo(numero) {
     if (numero % i === 0) {
       return false;
     }
+
+    return true;
 
   }
 
@@ -198,11 +200,11 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   let n = 8;
-  let res = 0;
+  let res = numero;
 
   do {
     n = n - 1;
-    res = numero + 5;
+    res = res + 5;
   }
   while (n > 0);
   return res;
