@@ -155,12 +155,12 @@ function esPrimo(numero) {
   for (var i = 2; i < numero; i++) {
 
     if (numero % i === 0) {
-      return true;
+      return false;
     }
 
   }
 
-  return false;
+  return true;
 
 }
 
