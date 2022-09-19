@@ -163,19 +163,35 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  
-  for (var i = 1; i < numero; i++) {
 
-    if (numero % i === 0) {
-      return false;
+  if(numero === 0 || numero === 1)return false;
+  if(numero === 2 ||numero === 3 || numero === 5||numero === 7 )return true;
+  if(numero % 2 === 0 ||numero % 3 === 0 || numero % 5 === 0||numero % 7 === 0 ) return false;
+  return true;
 
-    }else{
-      return true;
-    }
+// var contador = 0;
 
-  }
-  return false;
-  
+//   for (var i = 0; i < numero; i++){
+//     if(5 === numero){
+//       contador = contador + 1
+// console.log(contador);
+//     }
+
+
+//   }
+// var n =0;
+
+//  for (var i = 1; i < numero; i++){
+
+//    if (numero % 2 === 0){
+//     contador = contador + 1
+//     console.log (false);
+
+//    }else if( numero % numero === 1){
+//      return true;
+//    }
+
+//  }
 
 }
 
